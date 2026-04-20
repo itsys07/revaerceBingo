@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>オセロ × ビンゴ（CPU戦）</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="script" href="js/script.js">
+
+<body>
+    <div class="status" id="status">黒（先攻）の番です</div>
+    <div class="game-container">
+        <div class="bingo-card">
+            <h3>Player 黒 ビンゴ</h3>
+            <div id="bingo-1" class="bingo-grid"></div>
+        </div>
+        <div id="board"></div>
+        <div class="bingo-card">
+            <h3>Player 白 ビンゴ</h3>
+            <div id="bingo-2" class="bingo-grid"></div>
+        </div>
+    </div>
+    <div class="explanation">
+        <h4>ルール</h4>
+        プレイヤーはオセロのルールに従って石を置いていきますが、石を置いた場所や、ひっくり返した石のある場所が、各プレイヤーに配られたビンゴカードのマス目と連動しています。<br>石を置いたりひっくり返したりすることでビンゴカードのマスが埋まり、最初にビンゴを達成したプレイヤーが勝利となります。戦略的な配置と、ビンゴカードの運要素が絡み合います。<br>ビンゴで決着がつかないときは通常のオセロと同じで石の多いほうが勝利します。
+        <h4>遊び方のポイント</h4>
+        盤面の記号: ビンゴカードに書かれている「A1」や「D4」は、オセロ盤の「列(A-H)」と「行(1-8)」に対応しています。<br>
+        連動: 自分の石を置いて相手を挟むと、盤面の石の色が変わります。これに合わせて、ビンゴカードの該当する座標の色も動的に変化します。<br>
+        戦略: 普通のオセロなら「角を取る」のが強いですが、このゲームでは「自分のビンゴカードにある場所を優先して取る」<br>あるいは「相手のビンゴを阻止するために石をひっくり返す」という特有の戦略が必要になります。
+    </div>
+</body>
+
+</html>
